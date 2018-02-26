@@ -7,7 +7,7 @@
 
 static MPU6050 accelgyro;
 
-static int16_t gx, gy, gz;
+
 
 void accel_init(void) {
     Wire.begin();
