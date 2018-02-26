@@ -9,9 +9,9 @@ typedef struct {
 } actuatorData;
 
 typedef struct {
-    int8_t roll; //Accelerometer position in degrees
-    int8_t pitch;
-    int8_t yaw;
+    int16_t roll; //Accelerometer position in degrees
+    int16_t pitch;
+    int16_t yaw;
 } accelData;
 
 typedef struct {
@@ -34,4 +34,6 @@ void datalogger_init(void);
 
 double get_velocity(void);
 double depth_function(void);
+
+void getGyroPos(accelData *accelStruct);
 
