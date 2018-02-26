@@ -1,9 +1,17 @@
-void setup() {
-  // put your setup code here, to run once:
+#include "common.h"
 
+static dataStruct data;
+
+void setup() {
+    Serial.begin(57600);
+    rpm_sensor_setup();
+    datalogger_init();
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
+    data.rpm = rpm_calculate();
+    data.velocity = get_velocity();
+    data.depth = depth_function();
+    
+    logData(&data);
 }
