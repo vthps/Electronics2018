@@ -15,7 +15,7 @@ typedef struct {
 } accelData;
 
 typedef struct {
-    double rpm;
+    uint16_t rpm;
     double velocity; 
     double depth;
     accelData accelPos;
@@ -26,7 +26,7 @@ typedef struct {
 //Function prototypes
 
 void rpm_count_increment(void); 
-double rpm_calculate(void);
+uint16_t rpm_calculate(void);
 void rpm_sensor_setup(void);
 
 bool logData(dataStruct *dataToLog);

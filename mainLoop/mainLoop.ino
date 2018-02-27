@@ -12,6 +12,6 @@ void loop() {
     data.rpm = rpm_calculate();
     data.velocity = get_velocity();
     data.depth = depth_function();
-    getGyroPos( &(data.accelPos) );
+    getGyroPos(&(data.accelPos));
     logData(&data);
 }
