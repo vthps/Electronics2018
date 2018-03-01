@@ -1,4 +1,4 @@
-#include "common.h"
+    #include "common.h"
 
 static dataStruct data;
 
@@ -6,6 +6,7 @@ void setup() {
     Serial.begin(57600);
     rpm_sensor_setup();
     datalogger_init();
+    accel_init();
 }
 
 void loop() {
@@ -14,4 +15,5 @@ void loop() {
     data.depth = depth_function();
     getGyroPos(&(data.accelPos));
     logData(&data);
+    delay(1000);
 }
