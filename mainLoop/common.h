@@ -36,4 +36,5 @@ double get_velocity(void);
 double depth_function(void);
 
 void getGyroPos(accelData *accelStruct);
+void accel_init(void);
 
