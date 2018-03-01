@@ -4,7 +4,14 @@
 
 bool logData(dataStruct *dataToLog) {
 
-    Serial.println(millis(), DEC);
+    unsigned long timeStamp = millis();
+    
+    Serial.print( (timeStamp / 3600000), DEC);
+    Serial.print(":");
+    Serial.print( (timeStamp / 60000) % 60, DEC);
+    Serial.print(":");
+    Serial.println( (timeStamp / 1000) % 60, DEC);
+    
     Serial.print("RPM = ");
     Serial.println(dataToLog->rpm, 4);
 
