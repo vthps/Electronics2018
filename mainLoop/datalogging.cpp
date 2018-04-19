@@ -13,10 +13,10 @@ bool logData(dataStruct *dataToLog) {
     Serial.println( (timeStamp / 1000) % 60, DEC);
     
     Serial.print("RPM = ");
-    Serial.println(dataToLog->rpm, 4);
+    Serial.println(dataToLog->rpm, DEC);
 
     Serial.print("Velocity = ");
-    Serial.println(dataToLog->velocity, 4);
+    Serial.println(dataToLog->velocity, DEC);
 
     Serial.print("Depth = ");
     Serial.println(dataToLog->depth, 4);
