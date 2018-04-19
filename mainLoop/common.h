@@ -25,7 +25,8 @@ typedef struct {
 
 //Function prototypes
 
-void rpm_count_increment(void); 
+void rpm_interrupt_a(void); 
+void rpm_interrupt_b(void); 
 uint16_t rpm_calculate(void);
 void rpm_sensor_setup(void);
 
