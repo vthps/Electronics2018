@@ -15,6 +15,8 @@ bool logData(dataStruct *dataToLog) {
     Serial.print("RPM = ");
     Serial.println(dataToLog->rpm, DEC);
 
+    /*
+
     Serial.print("Velocity = ");
     Serial.println(dataToLog->velocity, DEC);
 
@@ -28,10 +30,13 @@ bool logData(dataStruct *dataToLog) {
     Serial.print(", Yaw = ");
     Serial.println(dataToLog->accelPos.yaw, DEC);
 
+    
+    
     Serial.println(" ");
     Serial.println(" ");
    
-
+    */
+    
     return 0;
 }
 

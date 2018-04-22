@@ -6,7 +6,7 @@ void setup() {
     Serial.begin(57600);
     rpm_sensor_setup();
     datalogger_init();
-    accel_init();
+    //accel_init();
 }
 
 void loop() {
