@@ -1,2 +1,0 @@
-1). Refactor velocity and rpm code to use integer math  
-
